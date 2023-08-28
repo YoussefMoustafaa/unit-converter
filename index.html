@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="icon" href="icons/icons8-ruler-32.png">
+    <link rel="stylesheet" href="unit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h2>Metric/Imperial Unit Conversion</h2>
+            <span role="textbox" id="number" contenteditable="">0</span>
+            <button id="convert-btn">Convert</button>
+        </header>
+        <section id="unit-container">
+            <div class="unit">
+                <h3>Length (Meter/Feet)</h3>
+                <p id="length">0 meters = 0 feet | 0 feet = 0 meters</p>
+            </div>
+            <div class="unit">
+                <h3>Volume (Liters/Gallons)</h3>
+                <p id="volume">0 liters = 0 gallons | 0 gallons = 0 liters</p>
+            </div>
+            <div class="unit">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p id="mass">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+            </div>
+        </section>
+        <section id="error-msg">
+            <h1>Please enter a valid number</h1>
+        </section>
+    </div>
+    <script src="unit.js"></script>
+</body>
+</html>
